@@ -34,7 +34,6 @@
     <!-- Font Icons CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jscdn/icons/icons.css">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <jsp:invoke fragment="head_area"/>
     <style>
@@ -69,7 +68,7 @@
                         <div class="brand-text brand-big hidden-lg-down">
 			<img border="0" alt="Bhadoo Cloud" src="https://cdn.jsdelivr.net/gh/jscdn/svg@1.0.1/bhadoo-cloud-logo.svg" height="30px">
                         </div>
-                        <div class="brand-text brand-small"><strong>BCD</strong></div>
+                        <div class="brand-text brand-small"><strong>U2D</strong></div>
                     </a>
                         <!-- Toggle Button--><a id="toggle-btn" href="#"
                                                 class="menu-btn active"><span></span><span></span><span></span></a>
@@ -123,7 +122,7 @@
                 <li><a href="/uploads"> <i class="fa fa-tachometer"></i>Your Uploads</a></li>
                 <!-- <li><a href="https://github.com/ParveenBhadooOfficial/SaveToGoogleDrive/issues"> <i class="fa fa-thumbs-o-up"></i>Suggest an Idea</a></li> -->
                 <!-- <li><a href="https://github.com/ParveenBhadooOfficial/SaveToGoogleDrive/issues"> <i class="fa fa-bug"></i>Report a Bug</a></li> -->
-                <li><a href="https://hashhackers.com/contact"> <i class="fa fa-envelope-o "></i>Contact</a></li>
+                <li ><a href="https://hashhackers.com/contact"> <i class="fa fa-envelope-o "></i>Contact</a></li>
             </ul>
         </nav>
         <div class="content-inner" id="content-inner">
