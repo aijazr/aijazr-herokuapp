@@ -15,7 +15,7 @@
         },
         "redirect_uri": {
             "description": "Your App URL eg. https://app.example.com/api/oauth/google/callback (Replace this with your own)",
-            "value": "https://ajzr.herokuapp.com/api/oauth/google/callback"
+            "value": "https://aijazr.herokuapp.com/api/oauth/google/callback"
         }
     }
 }
