@@ -35,35 +35,60 @@
         </ul>
           <!-- Forms Section-->
           <section class="forms">
-            <center>
-</center>
+            <style>
+   .divarea {
+            position: relative;
+        }
+
+.showcount {
+            position: absolute;
+            top: 3px;
+            right: 7px;
+            color: #0f5b79;
+            font-size: 11px;
+            border-radius: 3px;
+            background-color: #f2f2f2;
+        }
+        textarea {
+            height: 140px!important;
+        }
+ </style>
               <div class="container-fluid">
                   <div class="row">
                       <div class="col-lg-12">
                           <div class="card">
                               <div class="card-header d-flex align-items-center">
-                                  <h3 class="h4">Enter File Information</h3>
+                                  <h3 class="h4">Enter Information</h3>
                               </div>
                               <div class="card-body">
                                   <form method="post" id="uploadform" action="${pageContext.request.contextPath}/api/drive/upload">
                                       <div class="form-group">
-                                          <label class="form-control-label">URL</label>
-                                          <input type="url" id="url" name="url" placeholder="Enter File URL here"
-                                                 class="form-control">
+                                          <label class="form-control-label">URL(s)</label>
+                               <div class="form-group divarea">
+                            <textarea id="lks" class="form-control" onkeyup="getcount(this,true)" onpaste="getcount(this,true)" oncut="getcount(this,true)"
+                                placeholder="Enter File Url(s).."></textarea>
+                            <b class="showcount"></b>
+                        </div>
                                       </div>
                                       <div class="form-group">
-                                          <label class="form-control-label">Filename</label>
-                                          <input type="text" id="filename" name="filename"
-                                                 placeholder="Enter Filename here"
-                                                 class="form-control">
+                                          <label class="form-control-label">Filename(s)</label>
+                                          <div class="form-group divarea">
+                            <textarea id="nms" class="form-control" onkeyup="getcount(this,false)" onpaste="getcount(this,false)" oncut="getcount(this,false)"
+                                placeholder="Enter File Names(s).."></textarea>
+                            <b class="showcount"></b>
+                        
+                        </div>
                                           <span class="help-block-none">File name is optional.</span>
                                       </div>
                                       <div class="form-group row">
                                           <div class="col-sm-12 offset-sm-5">
-                                              <button type="submit" id="submit" class="btn btn-primary">Upload</button>
-                                          </div>
+                                              <input type="button" onclick="check(this)" value = "Check" class="btn btn-primary">
+                                              <button type="submit" id="submit" class="ml-1 btn btn-primary">Upload</button>
+                                       </div>
                                       </div>
+                                              <div class="mt-4 overflow-auto " style="font-size: 12px;" id="checkurls"></div>
                                   </form>
+                                  
                               </div>
                           </div>
                       </div>
@@ -74,6 +99,6 @@
 	                    </c:choose>
     </jsp:attribute>
     <jsp:attribute name="javascript">
-        <script src="${pageContext.request.contextPath}/js/submit_upload.js"></script>
+        <script src="${pageContext.request.contextPath}/js/submit_mupload.js"></script>
     </jsp:attribute>
 </ui:templete>
