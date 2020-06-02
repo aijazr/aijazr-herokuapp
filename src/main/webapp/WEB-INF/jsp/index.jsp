@@ -12,10 +12,6 @@
 	                    <c:choose>
 	                        <c:when test='${empty(user)}'>
 	                        <p style="font-size: 18px; color: black">Welcome to U2D</p>
-				<p style="font-size: 15px; color: black">This site has no registration service or user limits.</p> 
-				<p style="font-size: 15px; color: black">Once you login your Google Drive account you can upload any file from it's URL to your Google Drive Account.</p>
-				<p style="font-size: 15px; color: black">Please Note: This site only supports direct links.</p>
-				<p style="font-size: 15px; color: black">We do not save any of your data and once server restarts auth codes are cleared from our database too.</p><br>
 				<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/ba9da532d588c7d5b6cc3fbc52d26da7538064c8/style.css'/>
 				<canvas style="display: none;" ></canvas>
 				<script type='text/javascript' src='https://d33wubrfki0l68.cloudfront.net/js/0332cdafb1bac19d815d6030f67ca9bdb56fe27a/script.js'></script>
