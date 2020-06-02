@@ -91,11 +91,7 @@ function check($this) {
         for (let i = 0; i < links.length; i++) {        	
         let fileurl = links[i];
 		let filename = names[i] || noname
-         urls.innerHTML += `<b> ${i+1}</b>) <b>`
-urls.innerText += filename
-urls.innerHTML += "</b> "
-urls.innerText += fileurl ;
-urls.innerHTML += " <BR>";
+         urls.innerHTML += `<b> ${i+1}</b>) <b>${filename}</b> ${fileurl} <BR>`;
 	  } // forloop
         
       } else {
