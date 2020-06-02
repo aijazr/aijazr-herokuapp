@@ -87,16 +87,20 @@ function check($this) {
           }else
             nmText = ''; 
      
-		urls.innerHTML = `<div class="border-bottom" > <b> Total ${links.length} link(s) ${nmText}</b></div> `
+		urls.innerHTML = `<div style="border-bottom:1px solid black" > <b> Total ${links.length} link(s) ${nmText}</b></div> `
         for (let i = 0; i < links.length; i++) {        	
         let fileurl = links[i];
 		let filename = names[i] || noname
-         urls.innerHTML += `<b> ${i+1}</b>) <b>${filename}</b> ${fileurl} <BR>`;
+         urls.innerHTML += `<b> ${i+1}</b>) <b>`
+urls.innerText += filename
+urls.innerHTML += "</b> "
+urls.innerText += fileurl ;
+urls.innerHTML += " <BR>";
 	  } // forloop
         
       } else {
         $this.value = "Check"
-        urls.innerHTML = "";
+        urls.innerText = "";
       }
     }
 
