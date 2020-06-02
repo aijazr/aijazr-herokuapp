@@ -86,7 +86,7 @@
                                               <button type="submit" id="submit" class="ml-1 btn btn-primary">Upload</button>
                                        </div>
                                       </div>
-                                              <div class="mt-4 overflow-auto " style="font-size: 12px;" id="checkurls"></div>
+                                              <div class="mt-4" style="font-size: 12px;word-wrap:break-word;" id="checkurls"></div>
                                   </form>
                                   
                               </div>
